@@ -19,7 +19,6 @@ import base64
 
 # Esta deve ser a PRIMEIRA instrução do Streamlit no código
 st.set_page_config(page_title="RevMind", layout="wide")
-st.set_page_config(layout="wide")
 
 # =============================
 # 🔐 LOGIN
@@ -27,7 +26,7 @@ st.set_page_config(layout="wide")
 if not login():
     st.stop()
 
-st.title(f"🚀 RevMind | {st.session_state['empresa']}")
+st.title(f"🧠 RevMind | {st.session_state.get('empresa', 'Dashboard')}")
 st.caption("Plataforma de Revenue Intelligence para aceleração e previsão de vendas.")
 
 # =============================
