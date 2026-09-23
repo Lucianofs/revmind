@@ -27,7 +27,8 @@ st.set_page_config(layout="wide")
 if not login():
     st.stop()
 
-st.title(f"🚀 Revenue Intelligence AI | {st.session_state['empresa']}")
+st.title(f"🚀 RevMind | {st.session_state['empresa']}")
+st.caption("Plataforma de Revenue Intelligence para aceleração e previsão de vendas.")
 
 # =============================
 # 📂 DADOS
