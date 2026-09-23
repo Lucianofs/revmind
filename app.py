@@ -18,7 +18,7 @@ import base64
 
 
 # Esta deve ser a PRIMEIRA instrução do Streamlit no código
-st.set_page_config(page_title="Revenue Intelligence AI", layout="wide")
+st.set_page_config(page_title="RevMind", layout="wide")
 st.set_page_config(layout="wide")
 
 # =============================
